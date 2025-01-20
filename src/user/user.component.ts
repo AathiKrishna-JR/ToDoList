@@ -44,8 +44,8 @@ return 'assets/user/' + this.avatar;
 }
 
 onSelectedUser() {
-console.log(this.name);
+console.log(this.id);
 
-this.select.emit(this.name);
+this.select.emit(this.id);
 }
 }
