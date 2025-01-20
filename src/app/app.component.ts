@@ -20,7 +20,7 @@ export class AppComponent {
     return this.users.find((user) => user.id === this.SelectedUserId)!;
 
   }
-  onSelectedUser(id : string)
+  onSelectUser(id : string)
   {
     this.SelectedUserId = id;
   }

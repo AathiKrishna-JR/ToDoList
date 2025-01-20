@@ -44,6 +44,6 @@ return 'assets/user/' + this.avatar;
 }
 
 onSelectUser() {
-this.select.emit(this.id);
+this.select.emit(this.name);
 }
 }
