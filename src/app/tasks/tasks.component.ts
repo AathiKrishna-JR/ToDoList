@@ -1,5 +1,6 @@
 import { Component,Input } from '@angular/core';
 import { TaskComponent } from './task/task.component';
+import { dummyTasks } from './dummy_task';
 
 @Component({
   selector: 'app-tasks',
@@ -9,4 +10,5 @@ import { TaskComponent } from './task/task.component';
 })
 export class TasksComponent {
   @Input({required : true }) name !: string;
+  tasks = dummyTasks;
 }

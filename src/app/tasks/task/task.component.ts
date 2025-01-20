@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { dummyTasks } from '../dummy_task';
 
 @Component({
   selector: 'app-task',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './task.component.css'
 })
 export class TaskComponent {
-
+   
 }
