@@ -12,5 +12,10 @@
 </li>
   }
 </ul>
+@if (selectedUser){
 <app-tasks [name]="selectedUser.name" />
+}
+@else {
+  <p>fallback</p>
+}
 </main>
