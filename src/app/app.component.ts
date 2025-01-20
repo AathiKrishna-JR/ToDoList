@@ -13,14 +13,14 @@ import { TasksComponent } from './tasks/tasks.component';
 })
 export class AppComponent {
   users = DUMMY_USERS;
-  SelectedUserId ?: string;
+  Selectuid = 'u1';
   
   get selectedUser()
   {
-    return this.users.find((user) => user.id === this.SelectedUserId)!;
+    return this.users.find((user) => user.id === this.Selectuid)!;
   }
   onSelectUser(id : string)
   {
-    this.SelectedUserId = id;
+    this.Selectuid = id;
   }
 }
