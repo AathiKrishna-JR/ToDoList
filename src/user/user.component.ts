@@ -43,7 +43,7 @@ get imagePath() {
 return 'assets/user/' + this.avatar;
 }
 
-onSelectUser() {
-this.select.emit(this.name);
+onSelectedUser() {
+this.select.emit(this.id);
 }
 }
