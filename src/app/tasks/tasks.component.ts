@@ -11,6 +11,7 @@ import { dummyTasks } from './dummy_task';
 export class TasksComponent {
   @Input({required : true}) userId !: string;
   @Input({required : true }) name !: string;
+  
   tasks = dummyTasks;
 
   get selectedUserTasks()
