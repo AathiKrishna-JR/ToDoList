@@ -1,11 +1,11 @@
 
 
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../../header/header.component';
-import { DUMMY_USERS } from '../../user/dummy-users';
-import { UserComponent } from '../../user/user.component';
-import { TasksComponent } from '../tasks/tasks.component';
-import { TaskComponent } from '../tasks/task/task.component';
+import { HeaderComponent } from '../header/header.component';
+import { DUMMY_USERS } from '../user/dummy-users';
+import { UserComponent } from '../user/user.component';
+import { TasksComponent } from './tasks/tasks.component';
+import { TaskComponent } from './tasks/task/task.component';
 
 @Component({
 selector: 'app-root',
