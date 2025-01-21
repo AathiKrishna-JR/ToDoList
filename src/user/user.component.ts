@@ -29,6 +29,7 @@ styleUrl: './user.component.css',
 })
 export class UserComponent {
 @Input () user !: User;
+@Input () selected !: boolean;
 @Output() select = new EventEmitter();
 /*@Input({required:true}) id!: string;
 @Input({required:true}) avatar!: string;
