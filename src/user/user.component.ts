@@ -1,5 +1,6 @@
 import { Component, Input , Output , EventEmitter } from '@angular/core';
 import { User } from './user.model';
+import { CardComponent } from '../app/shared/card/card.component';
 
 //import { Component,computed,signal } from '@angular/core';
 
@@ -24,6 +25,7 @@ this.selectedUser.set(DUMMY_USERS[randomIndex]);
 @Component({
 selector: 'app-user',
 standalone: true,
+imports :[CardComponent],
 templateUrl: './user.component.html',
 styleUrl: './user.component.css',
 })
