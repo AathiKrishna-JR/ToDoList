@@ -1,6 +1,6 @@
 import { Component, Input , Output , EventEmitter } from '@angular/core';
 import { User } from './user.model';
-import { CardComponent } from '../app/shared/card/card.component';
+import { CardComponent } from '../shared/card/card.component';
 
 //import { Component,computed,signal } from '@angular/core';
 
