@@ -11,13 +11,14 @@ import { TasksService } from '../tasks.service';
   styleUrl: './task.component.css'
 })
 export class TaskComponent {
-  @Input({required : true}) userId !: string;
+
   @Input({required : true}) task !: Task;
   @Output() complete = new EventEmitter<string>();
   
   private tasksService = inject(TasksService);
 
   onCompleteTask() {
-    this.tasksService.removeTask(this.userId);
+    console.log(this.task.userId);
+    this.tasksService.removeTask(this.task.userId);
   }
 }
