@@ -16,6 +16,7 @@ export class NewtaskComponent {
   enteredTitle = '';
   enteredSummary = '';
   enteredDate = '';
+  
   private tasksService = inject(TasksService)
 
   onCancel(){
@@ -28,6 +29,7 @@ export class NewtaskComponent {
     summary : this.enteredSummary,
     date : this.enteredDate
    }, this.userId);
+
    this.close.emit();
   }  
 }

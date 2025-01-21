@@ -20,5 +20,6 @@ export class TaskComponent {
   onCompleteTask() {
     console.log(this.task.userId);
     this.tasksService.removeTask(this.task.id);
+    console.log(this.task.userId);
   }
 }

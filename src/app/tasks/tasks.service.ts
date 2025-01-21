@@ -49,7 +49,7 @@ export class TasksService {
         removeTask(id : string)
         {
 
-            return this.Tasks.filter( task => task.id !== id );
+            this.Tasks = this.Tasks.filter((task) => task.id !== id);
         }
         
       
