@@ -16,9 +16,9 @@ export class TasksComponent {
 
   get selectedUserTasks()
   {
-    return this.tasks.filter((task) => {
-      console.log(task.userId === this.userId);
-      task.userId === this.userId});
+    console.log(this.userId);
+    
+    return this.tasks.filter( task => task.userId === this.userId );
   }
 }
 
