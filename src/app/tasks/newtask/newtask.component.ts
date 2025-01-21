@@ -10,6 +10,7 @@ import { TasksService } from '../tasks.service';
   styleUrl: './newtask.component.css'
 })
 export class NewtaskComponent {
+  @Input({required : true }) uname !: string;
   @Input({required : true }) userId !: string;
   @Output() close = new EventEmitter<void>()
   @Output() add = new EventEmitter<NewTaskData>()
@@ -17,6 +18,7 @@ export class NewtaskComponent {
   enteredSummary = '';
   enteredDate = '';
   isEmpty = false;
+
   
   private tasksService = inject(TasksService)
 
