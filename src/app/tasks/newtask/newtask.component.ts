@@ -24,8 +24,6 @@ export class NewtaskComponent {
       title : this.enteredTitle,
       summary : this.enteredSummary,
       date : this.enteredDate
-    })
-
-
-  }  
+  })
+ }  
 }
