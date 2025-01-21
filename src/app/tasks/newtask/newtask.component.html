@@ -4,7 +4,10 @@
   <form (ngSubmit)="onSubmit()">
     <p>
       <label for="title">Title</label>
-      <input type="text" id="title" name="title" [(ngModel)] = "enteredTitle"  required/>
+      <input type="text" id="title" name="title" [(ngModel)] = "enteredTitle"  />
+      @if(isEmpty){
+          <span id = "error">Title Required</span>
+      }
     </p>
 
     <p>

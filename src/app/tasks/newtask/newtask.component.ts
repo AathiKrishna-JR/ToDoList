@@ -16,6 +16,7 @@ export class NewtaskComponent {
   enteredTitle = '';
   enteredSummary = '';
   enteredDate = '';
+  isEmpty = false;
   
   private tasksService = inject(TasksService)
 
@@ -24,12 +25,19 @@ export class NewtaskComponent {
   }
  
   onSubmit(){
-   this.tasksService.addTask({
-    title : this.enteredTitle,
-    summary : this.enteredSummary,
-    date : this.enteredDate
-   }, this.userId);
-
+    if(this.enteredTitle.length == 0){
+      this.isEmpty = true;
+    }
+    
+    else
+    {
+      this.isEmpty = false;
+      this.tasksService.addTask({
+      title : this.enteredTitle,
+      summary : this.enteredSummary,
+      date : this.enteredDate
+      }, this.userId);
    this.close.emit();
+    }
   }  
 }
