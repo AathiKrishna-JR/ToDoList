@@ -2,8 +2,9 @@
     padding: 1rem;
     border-radius: 8px;
     max-height: 60vh;
-    overflow: auto;
+    overflow: false;
     background-color: #3a2c54;
+    overflow: false;
   }
   
   header {
